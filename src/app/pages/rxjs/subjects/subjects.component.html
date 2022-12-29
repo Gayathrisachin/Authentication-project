@@ -1,0 +1,12 @@
+<p>subjects works!</p>
+<!-- <app-behavior-subjects></app-behavior-subjects> -->
+<form [formGroup]="sub">
+    <mat-form-field>
+        <input matInput type="text" formControlName="mes"  >
+    </mat-form-field>
+    
+</form>
+
+<p>{{message}}</p>
+<button (click)="editMessage(sub.value.mes)" >Change</button>
+

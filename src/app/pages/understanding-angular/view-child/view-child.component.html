@@ -1,0 +1,46 @@
+<div class="main-container">
+    <mat-card class="vc-main">
+        <h3 appAppHighlight>Overview</h3>
+        <p>In angular if we want to get the reference of our template into the component file then we can choose @ViewChild or @ViewChildren</p>
+        <p>To see the result of @ViewChild and @ViewChildren we have to use ngAfterViewInit() method of Angular Lifecycle hook because components view will be initialized after calling ngAfterViewInit().</p>
+        <p>To use ngAfterViewInit() method, the class need to implement AfterViewInit interface as below</p>
+        <b>export class ViewChildComponent implements OnInit,AfterViewInit {{ '{' }}  } </b>
+        <div class='mt-4'>
+            In Javascript, if we want to get id of an element from the HTML then we used DOM methods<br>
+            For Example,<br>
+           &lt;h1 id="heading">Heading &lt;/h1>;<br>
+
+           <b>let output = document.getElemntById('heading')</b><br>
+        
+           Similarly In Angular,<br>
+           &lt;h1 #heading>Heading &lt;/h1>;<br>
+           <b>@ViewChild('heading') output : ElementRef</b><br>
+           <b>ngAfterViewInit(){{ '{' }} <br> this.output.nativeElement.style.color = 'blue';<br> } <br></b>
+          
+        </div>
+    </mat-card>
+    
+    <mat-card class="vc-create">
+        <h2>View Child Demo</h2>
+        <p>ViewChild can refer to only one element.Hence it uses ElementRef</p>
+           The color of the text <b>Heading</b> changes after 3 seconds.
+           <h3 #heading>Heading</h3>
+    </mat-card>
+    <mat-card class="vc-create">
+        <h2>View Children Demo</h2>
+        <p>ViewChildren can refer to more than one element with same template reference.Hence it uses QueryList</p>
+        For Example,<br>
+           &lt;h1 #fc>This is the first content &lt;/h1><br>
+           &lt;h1 #fc>This is the first content &lt;/h1><br>
+           <b>@ViewChildren('fc') content : QueryList &lt;any></b><br>
+           <b>ngAfterViewInit(){{ '{' }} <br> this.content.first.nativeElement.style.color = 'red';<br> } <br></b>
+
+
+
+        <h3 #fc>This is the first content</h3>
+        <h3 #fc>This is the second content</h3>
+        <h3 #fc>This is the third content</h3>
+
+    </mat-card>
+    
+    </div>

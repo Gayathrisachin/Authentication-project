@@ -1,0 +1,53 @@
+<div class="main-container">
+<mat-card>
+<h2>Directives</h2>
+
+<p>
+    Directives are classes that add new behavior or modify the existing behavior to the elements in the template.
+</p>
+<div class="mt-4">
+    Types of Directives are:
+    <ul>
+        <li>Component Directive</li>
+        <li>Structural Directive</li>
+        <li>Attribute Directive</li>
+    </ul>
+</div>
+<div class="mt-4">
+    Custom Directives can be created by using angular cli command <b>ng g d directive-name</b>.<br>
+    Directives use @Directive() decorator.
+    <div class="mt-4">For Example,<br>
+
+        template:`&lt;h1 [appAppHighlight]>Heading &lt;/h1>`<br>
+        <div class="mt-4">
+        @Directive({{ '{' }} <br>
+            selector: '[appAppHighlight]' <br>
+          })<br>
+          export class AppHighlightDirective implements OnInit {{ '{' }}<br>
+            constructor(private element :ElementRef) {{ '{' }} }<br>
+            ngOnInit(){{ '{' }}<br>
+              this.element.nativeElement.style.background = "green"<br>
+            }
+          </div>
+    </div>
+</div>
+</mat-card>
+<mat-card class="demo">
+    <h2>Directive Demo</h2>
+        <p appAppHighlight>This is the text which uses Custom Directive to change background</p>
+    <div class="mt-4">
+        <mat-form-field>
+            <input matInput NumbersOnlyDirective placeholder="Enter Numbers only">
+        </mat-form-field>
+    </div>
+        
+    <div class="mt-4">
+        <mat-form-field>
+            <input matInput AlphabetsOnlyDirective placeholder="Enter Alphabets only">
+        </mat-form-field>
+    </div>
+   
+</mat-card>
+
+
+</div>

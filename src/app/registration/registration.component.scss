@@ -1,0 +1,18 @@
+.container{
+    max-width: 300px;
+    margin: 0 auto;
+    top: 10%;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #9a9a9a;
+    box-sizing: border-box;
+    padding: 0 0 5px;
+    box-shadow: none;
+}
+.form-control{
+    border-radius: 0;
+}
+input .no-outline:focus {
+    outline: none;
+  }

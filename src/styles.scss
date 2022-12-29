@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./app/styles/props.scss";
+html, body { height: 100%; 
+// background: $jackson-purple;
+}
+// .form-control {
+//     border-radius:0;
+// }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+input:focus{
+    outline: none;
+}
+.mat-drawer-container {
+    background-color: #fafafa !important;
+    color: #000000de;
+}
+::-webkit-scrollbar-track {
+    background-color: $azure;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $light-grey;
+    border-radius: 6px;
+  }
+  .mat-expansion-panel{
+    background: none;
+  }
+
+  .mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none;
+  }
+  .mat-expansion-panel-header-title {
+    color: $white;
+    font-size: 12px;
+  }
+  .mat-expansion-panel-header{
+    padding: 0 15px !important;
+    color: $white !important;
+  }
+  .mat-expansion-indicator:after{
+    color: $white !important;
+  }
+  .mat-expansion-panel-body {
+    padding: 0 25px 5px !important;
+}
+.mat-expansion-panel-header.mat-expanded {
+  height: 48px !important;
+}

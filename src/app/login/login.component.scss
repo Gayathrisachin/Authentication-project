@@ -1,0 +1,31 @@
+
+.main-container{
+   max-width: 360px;
+   margin: auto;
+   top: 20%;
+   height: 300px;
+
+}
+  .mat-form-field {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }

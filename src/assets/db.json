@@ -1,0 +1,42 @@
+{
+  "authenticate": [
+    {
+      "username": "Gsss",
+      "password": "gayatri",
+      "id": 1
+    },
+    {
+      "username": "gssss",
+      "password": "gayatru",
+      "id": 2
+    }
+  ],
+  "register": [
+    {
+      "username": "Gayatri",
+      "password": "gayatri",
+      "id": 1
+    },
+    {
+      "username": "Gayatri",
+      "password": "gg",
+      "id": 2
+    },
+    {
+      "username": "Gayatri",
+      "password": "ggg",
+      "id": 3
+    },
+    {
+      "username": "Gayatri",
+      "password": "kk",
+      "id": 4
+    }
+  ],
+  "all": [
+    {}
+  ],
+  "admin": [
+    {}
+  ]
+}
